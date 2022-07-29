@@ -25,3 +25,17 @@ Google Chrome.
 7. (Additional Bonus Points) Explain how you measure the quality of the developed project and what’s the measurement result?
 
 I measure the software quality using defect density where defects are measured against executable lines of code. Since there were known defects in my testing of the project, there would be no defect density which would be good for the project.
+
+
+Requirements implemented into the project:
+1. Login feature
+2. Register feature
+3. Dashboard
+4. Logout feature
+5. Booking form
+6. Data storage (incomplete but the functioanlity is in place)
+
+Requirements not able to be completed:
+1. Edit profile feature
+2. 'Sign In With Google' function
+3. Better UI design
