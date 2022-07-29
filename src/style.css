@@ -1,0 +1,109 @@
+.{
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman";
+}
+body {
+	width: 100%;
+	height: auto;
+	background-color: #FAEBD7;
+}
+.Dashboard {
+	text-align: center;
+	font-size: 20px;
+}
+
+.HelpCenter {
+	text-align: center;
+	font-size: 20px;
+}
+.LogOut {
+	text-align: center;
+	font-size: 20px;
+}
+.Menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.Menu ul li{
+	margin: 0 10px;
+	display: inline-block;
+	top: 0;
+	left: 0;
+}
+.Menu a{
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+}
+.Menu a:hover{
+	color: red;
+}
+.header {
+	text-align: center;
+	padding-top: 25px;
+}
+.CustomerService a{
+	text-decoration: none;
+}
+.CustomerService a:hover{
+	color: red;
+}
+.CustomerService p{
+	font-weight: bold;
+}
+.currentbookings p{
+	font-weight: bold;
+}
+.enterbooking p{
+	font-weight: bold;
+}
+.profile p{
+	font-weight: bold;
+}
+.bookings th {
+	border-bottom: 1px solid;
+	padding-right: 10px;
+}
+.forminfo input{
+	width: 50%;
+	border-style: hidden;
+	border-bottom: solid;
+	border-color: red;
+	background-color: #FAEBD7;
+}
+.forminfo input[type=time]{
+	
+}
+.forminfo input[type=date]{
+	
+}
+.formbutton input[type=button]{
+	background-color: red;
+	color: white;
+	width: 10%;
+	border-radius: 20px;
+	border-color: red;
+}
+.authenticate {
+	text-align: center;
+	float: center;
+	align-items: center;
+	padding-top: 10%;
+}
+.Welcome p{
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+}
+.authenticate a{
+	color: red;
+	text-decoration: none;
+}
+.authenticate a:hover{
+	color: white;
+}
+
+
+

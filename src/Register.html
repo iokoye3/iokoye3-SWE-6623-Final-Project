@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Companion</title>
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<div class="Welcome">
+		<p>Travel Companion</p>
+	</div>
+	<form class="authenticate">
+		<div class="forminfo">
+			<input type="email" id="email" placeholder="E-mail"/>
+		</div>
+		<br>
+		<div class="forminfo">
+			<input type="password" id="password" placeholder="Password"/>
+		</div>
+		<br>
+		<div class="formbutton">
+			<input type="button" value="Register" id="register"/>
+		</div>
+		<p>Already have an account? <a href="./Login.html">Login</a></p>
+	</form>
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+		import { getDatabase } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js";
+		import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+		
+		const firebaseConfig = {
+			apiKey: "AIzaSyCd8xc1U3Nd2wrS3SujKYY_Wtpkl1vd6CU",
+			authDomain: "messenger-d55ef.firebaseapp.com",
+			projectId: "messenger-d55ef",
+			storageBucket: "messenger-d55ef.appspot.com",
+			messagingSenderId: "231203105270",
+			appId: "1:231203105270:web:1aa9951435b45cdfb2ffd7"
+		};
+
+		const app = initializeApp(firebaseConfig);
+		const database = getDatabase(app);
+		const auth = getAuth();
+		
+		register.addEventListener('click',(e) => {
+		
+			var email = document.getElementById('email').value;
+			var password = document.getElementById('password').value;
+			
+			createUserWithEmailAndPassword(auth, email, password)
+			.then((userCredential) => { 
+			const user = userCredential.user;
+			
+				alert('User successfully registered.');
+				window.location.href="Dashboard.html";
+			})
+			.catch((error) => {
+				const errorCode = error.code;
+				const errorMessage = error.message;
+				
+				alert(errorMessage);
+			  });
+			
+			});
+	</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Companion</title>
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<div class="Menu" id="MyMenu">
+		<ul>
+			<li><a href ="./Dashboard.html">Dashboard</a></li>
+			<li><a href ="./HelpCenter.html">Help Center</a></li>
+			<li><a href ="./LogOut.html">Log Out</a></li>
+		</ul>
+		<a class="scroll" onscroll="myFunction()"></a>
+		<script>
+		var lastScroll = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScroll = window.pageYOffset;
+			if (lastScroll > currentScroll) {
+				document.getElementById("MyMenu").style.top = "0";
+			}
+			else {
+				document.getElementById("MyMenu").style.top = "-40px";
+			}
+			lastScroll = currentScroll;
+			}
+		</script>
+	</div>
+	<div class="header">
+		<h1>Dashboard</h1>
+	</div>
+	
+	<div class="enterbooking">
+		<p>Enter a booking</p>
+	</div>
+	
+	<div class="rental" id="rental">
+		<div class="forminfo">
+			<p>Type: *</p><input type="text" id="type" placeholder="Car, Flight, or Hotel?" required/>
+		</div>
+		
+		<div class="forminfo">
+			<p>Reservation Company: </p><input type="text" id="company" placeholder="Company"/>
+		</div>
+		
+		<div class="forminfo">
+			<p>Reservation Number: *</p><input type="text" id="reservation" maxLength="10" placeholder="0123456789" required/>
+		</div>
+		
+		<div class="forminfo">
+			<p>First Name: </p><input type="text" id="firstname" placeholder="First Name"/>
+		</div>
+		
+		<div class="forminfo">
+			<p>Last Name: *</p><input type="text" id="lastname" placeholder="Last Name" required/>
+		</div>
+		
+		<div class="forminfo">
+			<p>Start Date: *</p><input type="date" id="startdate" placeholder="MM/DD/YYYY" required/>
+		</div>
+		
+		<div class="forminfo">
+			<p>End Date: *</p><input type="date" id="enddate" placeholder="MM/DD/YYYY" required/>
+		</div>
+		
+		<div class="forminfo">
+			<p>Start Time: *</p><input type="time" id="starttime" placeholder="" required/>
+		</div>
+		
+		<div class="forminfo">
+			<p>End Time: *</p><input type="time" id="endtime" placeholder="" required/>
+		</div>
+		<p>Required*</p>
+		<div class="formbutton">	
+			<input type="button" value="Submit" id="submitform"/>
+		</div>				
+	</div>
+	
+	<br>
+	<br>
+	
+	<div class="currentbookings">
+		<p>Current bookings</p>
+	</div>
+	
+	<table class="bookings" id="bookings">
+		<tr>
+			<th>Type</th>
+			<th>Company</th>
+			<th>Number</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Start Date</th>
+			<th>End Date</th>
+			<th>Start Time</th>
+			<th>End Time</th>
+		</tr>
+	</table>
+	
+	<script src="project.js"></script>
+</body>
+</html>	

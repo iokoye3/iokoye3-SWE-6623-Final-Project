@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Companion</title>
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<div class="Menu" id="MyMenu">
+		<ul>
+			<li><a href ="./Dashboard.html">Dashboard</a></li>
+			<li><a href ="./HelpCenter.html">Help Center</a></li>
+			<li><a href ="./LogOut.html">Log Out</a></li>
+		</ul>
+		<a class="scroll" onscroll="myFunction()"></a>
+		<script>
+		var lastScroll = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScroll = window.pageYOffset;
+			if (lastScroll > currentScroll) {
+				document.getElementById("MyMenu").style.top = "0";
+			}
+			else {
+				document.getElementById("MyMenu").style.top = "-40px";
+			}
+			lastScroll = currentScroll;
+			}
+		</script>
+	</div>
+	<div class="header">
+		<h1>Help Center</h1>
+	</div>
+	<div class="CustomerService">
+		<p>Customer Service Links</p>
+		<p>Car</p>
+			Enterprise: <a href="https://www.enterprise.com/en/help/contact.html">Enterprise Customer Service</a>
+			<br>
+			Hertz: <a href="https://www.hertz.com/rentacar/misc/index.jsp?targetPage=USContactUs.jsp&ef_id=VvpccgAAAIuktxuq:20160406124430:s">Hertz Customer Service</a>
+			<br>
+			Sixt: <a href="https://corporate.sixt.com/contact/">Sixt Customer Service</a>
+			<br>
+			Dollar: <a href="https://www.dollar.com/Help/main.aspx">Dollar Customer Service</a>
+			<br>
+			Alamo: <a href="https://www.alamo.com/en/customer-support.html">Alamo Customer Service</a>
+			<br>
+		<p>Flight</p>
+			Delta: <a href="https://www.delta.com/us/en/need-help/overview">Delta Customer Service</a>
+			<br>
+			Southwest Airlines: <a href="https://www.southwest.com/html/contact-us/">Southwest Airlines Customer Service</a>
+			<br>
+			American Airlines: <a href="https://www.aa.com/i18n/customer-service/contact-american/american-customer-service.jsp">American Airlines Customer Service</a>
+			<br>
+			Spirit: <a href="https://www.spirit.com/contact-us">Spirit Customer Service</a>
+			<br>
+			JetBlue: <a href="https://www.jetblue.com/contact-us">JetBlue Customer Service</a>
+			<br>
+		<p>Hotel</p>
+			Marriott: <a href="https://help.marriott.com/s/">Marriott Customer Service</a>
+			<br>
+			Hilton: <a href="https://help.hilton.com/s/contactsupport">Hilton Customer Service</a>
+			<br>
+			Radisson: <a href="https://www.radissonhotelsamericas.com/en-us/contact-us">Radisson Customer Service</a>
+			<br>
+			Best Western: <a href="https://www.bestwestern.com/en_US/customer-service.html?URL=https%3A%2F%2Fwww.bestwestern.com%2Fen_US%2Fcustomer-service.html&iata=00162850&CJPID=9069228&cjevent=26a6898903a011ed825505590a82b820&cjdata=MXxOfDB8WXww">Best Western Customer Service</a>
+			<br>
+			Hyatt: <a href="https://help.hyatt.com/en.html">Hyatt Customer Service</a>
+			<br>
+	</div>
+</body>
+</html>

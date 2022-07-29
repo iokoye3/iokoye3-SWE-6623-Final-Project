@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Companion</title>
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<script>
+		var logUserOut = confirm("Are you sure you want to log out?");
+ 
+		if (logUserOut == true)
+		{
+			document.location='Login.html';
+		}
+		else
+		{
+			window.history.go(-1);
+		}
+	</script>
+</body>
+</html>
