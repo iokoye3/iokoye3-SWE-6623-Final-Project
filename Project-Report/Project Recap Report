@@ -1,0 +1,27 @@
+The idea why you want to build this project.
+
+In "Ifeanyi Okoye SE Assignment 1".
+
+How you plan and manage this project (include a figure).
+
+In "Ifeanyi Okoye SE Assignment 2".
+
+What the requirement of the proposed project (include a UML figure and user interface).
+
+In "Ifeanyi Okoye SE Assignment 3".
+
+Explain the architecture used in your project (include a figure).
+
+In "Ifeanyi Okoye SE Assignment 3".
+
+What are the major difficulties you have in the development and test?
+
+In "Ifeanyi Okoye SE Assignment 5". To expand, I may have been a little ambitious in some of the functionality I wanted to add in such a short time. I would say time was the only major difficulty.
+
+(Additional Bonus Points) Where you deploy your project?
+
+Google Chrome.
+
+(Additional Bonus Points) Explain how you measure the quality of the developed project and what’s the measurement result?
+
+I measure the software quality using defect density where defects are measured against executable lines of code. Since there were known defects in my testing of the project, there would be no defect density which would be good for the project.
