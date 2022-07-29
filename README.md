@@ -2,14 +2,14 @@
 
 Needed environment:
 
-Choice of IDE is up to user
-Choice of browser is up to user
-Desktop or laptop
+1. Choice of IDE is up to user
+2. Choice of browser is up to user
+3. Desktop or laptop
 
 Needed libraries or resources:
 
-Internet connection
-Embedded web server
+1. Internet connection
+2. Embedded web server
 
 Process to run it:
 
