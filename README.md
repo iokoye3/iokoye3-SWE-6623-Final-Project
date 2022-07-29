@@ -23,3 +23,4 @@ Process to run it:
 8. Submit booking information.
 9. Scroll down to view current bookings.
 10. Click 'Help Center' on the menu to access the popular booking chains' customer service pages.
+11. Log out once everything has been completed.
